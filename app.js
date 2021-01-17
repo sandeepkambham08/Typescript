@@ -1,7 +1,13 @@
-function add(n1, n2) {
-    return n1 + n2;
+var person = {
+    name: 'sandeep',
+    location: 'canada',
+    skills: ['js', 'react']
+};
+console.log(person);
+for (var _i = 0, _a = person.skills; _i < _a.length; _i++) {
+    var skill = _a[_i];
+    console.log(skill.toLowerCase());
 }
-var number1 = 20;
-var number2 = 40;
-var result = add(number1, number2);
-console.log(result);
+person.skills.map(function (skill) {
+    console.log(skill);
+});

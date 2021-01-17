@@ -1,9 +1,15 @@
-function add (n1,n2){
-    return n1+n2;
+const person = {
+    name : 'sandeep',
+    location : 'canada',
+    skills: ['js', 'react'],
 }
 
-const number1 = 20;
-const number2 = 40;
+console.log(person);
 
-const result = add(number1, number2);
-console.log(result);
+for(const skill of person.skills){
+    console.log(skill.toLowerCase());
+}
+
+person.skills.map(skill=>{
+    console.log(skill);
+})
